@@ -8,6 +8,16 @@
     margin: 0 auto;
 }
 
+/* COULEURS UTILISEES  : 
+#FFC107 ambre
+#FFD453 ambre clair
+#7F6A2A ambre bruni
+#3D4F58 gris bleu foncé
+#95C2D7 gris bleu très clair
+#607D8B gris bleu clair
+#54ADD7 bleu
+
+
 .clearfix:after{            /* POUR EVITER LES ERREURS AVEC LES FLOTTANTS */
     display : block;
     content: "";
@@ -44,26 +54,6 @@ html {
     font-size: 15pt;
 }
 
-/* HEADER */
-
-.person {
-    text-align: center;
-    width: 300px;
-    height: 50px;
-    padding: 10px;
-    background: #95C2D7;
-    margin-top: 50px;
-}
-
-.person h2 {
-    clear:left;
-}
-
-nav li{
-    display: inline-block;
-    padding: 10px;
-}
-
 #moncercle{
     background:#95C2D7;
     border-radius:50%;
@@ -72,12 +62,55 @@ nav li{
     text-align: center;
     line-height: 60px;
     font-weight: 900;
-    margin-left: 50px;
+    margin-left: 80px;
     margin-top: 100px;
-    margin-bottom: 50px;
+}
+
+/* HEADER */
+
+.person {
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    background: #95C2D7;
+    margin-top: 50px;
+}
+
+.person h1, .person h2 {
+    clear:left;
+    margin-left: 50px;
+}
+
+.person h1 {
+    padding-top: 8px;
+}
+
+#graphicon {
+    background: #607D8B;
+    border-radius:50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 900;
+    float: right;
+    margin-top: 5px;
+    margin-right: 50px;
+}
+
+.menu1 li{
+    display: inline-block;
+}
+
+.avatar {
+    margin-right: 150px;
+    width: 300px;
 }
 
 /* MAIN */
+
+section {
+    margin-top: 50px;
+}
 
 section .elmt {
     background: #95C2D7;
@@ -98,6 +131,7 @@ article {
     background: #95C2D7;
     padding: 30px;
     margin: 50px 100px;
+    box-shadow: 0px 0px 10px  #FFC107;
 }
 
 article .fa {
