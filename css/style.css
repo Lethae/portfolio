@@ -4,8 +4,9 @@
 
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,700);
 
-.wrapper{
-    margin: 0 auto;
+@font-face {
+    font-family: "Playstation";
+    src: url('../fonts/zrnic_rg.ttf');
 }
 
 /* COULEURS UTILISEES  : 
@@ -16,6 +17,7 @@
 #95C2D7 gris bleu très clair
 #607D8B gris bleu clair
 #54ADD7 bleu
+#3E7F9E bleu gris */
 
 
 .clearfix:after{            /* POUR EVITER LES ERREURS AVEC LES FLOTTANTS */
@@ -39,7 +41,27 @@ div, header, footer, aside, section {
 html {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
-    background: #3D4F58
+    color: #111111;
+    background: #607D8B;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapperleft {
+    width: calc(100% / 2);
+    display: inline-block;
+    min-height: 100%;
+}
+
+.wrapperright {
+    width: calc(100% / 2);
+    margin: -2px;
+    display: inline-block;
+        min-height: 100%;
 }
 
 .left {
@@ -64,13 +86,18 @@ html {
     font-weight: 900;
     margin-left: 80px;
     margin-top: 100px;
+    box-shadow: 0px 0px 10px  #3E7F9E inset;
+}
+
+#moncercle:visited, #moncercle:hover {
+    box-shadow: 0px 0px 10px #FFC107;
 }
 
 /* HEADER */
 
 .person {
     text-align: center;
-    width: 400px;
+    width: 80%;
     height: 50px;
     background: #95C2D7;
     margin-top: 50px;
@@ -79,14 +106,17 @@ html {
 .person h1, .person h2 {
     clear:left;
     margin-left: 50px;
+    font-family: 'Playstation';
+    text-transform: uppercase;
 }
 
 .person h1 {
-    padding-top: 8px;
+        font-size: 20px;
+    padding-top: 7px;
 }
 
 #graphicon {
-    background: #607D8B;
+    background: #3D4F58;
     border-radius:50%;
     width: 40px;
     height: 40px;
@@ -95,6 +125,7 @@ html {
     float: right;
     margin-top: 5px;
     margin-right: 50px;
+    color: #95C2D7;
 }
 
 .menu1 li{
@@ -102,11 +133,17 @@ html {
 }
 
 .avatar {
-    margin-right: 150px;
+    margin-right: calc(100% / 4);
     width: 300px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
-/* MAIN */
+.avatar:hover {
+    box-shadow: 0px 0px 10px #FFC107;
+}
+
+/* MAIN LEFT*/
 
 section {
     margin-top: 50px;
@@ -119,21 +156,58 @@ section .elmt {
     width: 300px;
 }
 
-section .logo {
-    background: #54ADD7;
-    height: 36px;
-    width: 40px;
-    margin-left: 30px;
+section .elmt:hover {
+    background: #FFD453;
+    box-shadow: 0px 0px 10px #FFC107;
 }
 
-article {
+section .logo {
+    margin-left: 30px;
+    margin-top: -6px;
+}
+
+/*#graph {
+    display:none
+}*/
+
+#graph:target {
+    display: block;
+}
+
+#code {
+    display:none
+}
+
+#code:target {
+    display: block;
+}
+
+section article {
     display: inline-block;
     background: #95C2D7;
     padding: 30px;
-    margin: 50px 100px;
-    box-shadow: 0px 0px 10px  #FFC107;
+    margin: 50px 50px;
+    box-shadow: 0px 0px 10px  #3E7F9E;
 }
 
 article .fa {
     margin: 10px;
+}
+
+/* MAIN RIGHT */
+
+#detail {
+    display: none;
+    background: #95C2D7;
+    padding: 30px;
+    margin-right: 50px;
+    box-shadow: 0px 0px 10px  #FFC107;
+}
+
+#detail:target {
+    display: inline-block;
+    background: #95C2D7;
+    padding: 30px;
+    margin-right: 50px;
+    box-shadow: 0px 0px 10px  #FFC107;
 }
