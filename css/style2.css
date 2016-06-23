@@ -110,6 +110,7 @@ section {
 
 section .elmt {
     background: #95C2D7;
+    font-family: 'Playstation';
     padding: 10px 30px;
     margin: 20px 20%;
     width: 60%;
@@ -156,6 +157,11 @@ section article {
 
 article .fa {
     margin: 10px;
+}
+
+.contact h1{
+    font-family: 'Playstation';
+    font-size: 15pt;
 }
 
 /* MAIN RIGHT */
@@ -211,12 +217,37 @@ article .fa {
     position: absolute;
     display: block;
     background: #95C2D7;
-    width: 300px;
+    width: 50%;
     height: 150px;
     padding: 30px;
     margin-left: 20%;
     box-shadow: 0px 0px 10px  #FFC107;
     z-index: 3;
+}
+
+#details ul li {
+    list-style-type: disc;
+    font-size: 14pt;
+    margin: 10px 0 20px 20px;
+    padding-left: 10px;
+} 
+
+#details ol {
+    height: 180px;
+    margin-top: -10px;
+}
+
+#details .study {
+    margin-top: -30px;
+    margin-left: 20px;
+}
+
+#details .fa {
+    margin-left: -20px;
+}
+
+#details .fa-globe {
+    margin-left: -16px;
 }
 
 /*PORTFOLIO*/
