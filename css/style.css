@@ -54,7 +54,6 @@ a{
 .wrapperleft {
     width: calc(100% / 2);
     display: inline-block;
-    min-height: 100%;
 }
 
 .wrapperright {
@@ -74,23 +73,6 @@ a{
 
 .fa {
     font-size: 15pt;
-}
-
-#moncercle{
-    background:#95C2D7;
-    border-radius:50%;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    line-height: 60px;
-    font-weight: 900;
-    margin-left: 80px;
-    margin-top: 100px;
-    box-shadow: 0px 0px 10px  #3E7F9E inset;
-}
-
-#moncercle:visited, #moncercle:hover {
-    box-shadow: 0px 0px 10px #FFC107;
 }
 
 /* HEADER */
@@ -128,19 +110,33 @@ a{
     color: #95C2D7;
 }
 
-.menu1 li{
-    display: inline-block;
-}
-
 .avatar {
     margin-right: calc(100% / 4);
     width: 300px;
     margin-bottom: 50px;
     margin-top: 50px;
+    z-index: 1;
 }
 
 .avatar:hover {
     box-shadow: 0px 0px 10px #FFC107;
+}
+
+.moncercle{
+    background:#95C2D7;
+    border-radius:50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 900;
+    box-shadow: 0px 0px 10px  #3E7F9E inset;
+}
+
+.menu1 ul{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;    
 }
 
 /* MAIN LEFT*/
@@ -152,8 +148,8 @@ section {
 section .elmt {
     background: #95C2D7;
     padding: 10px;
-    margin: 20px 100px;
-    width: 300px;
+    margin: 20px 20%;
+    width: 60%;
 }
 
 section .elmt:hover {
@@ -162,24 +158,16 @@ section .elmt:hover {
 }
 
 section .logo {
-    margin-left: 30px;
+    margin-left: 10%;
     margin-top: -6px;
 }
 
-/*#graph {
-    display:none
-}*/
-
-#graph:target {
-    display: block;
+#graph {
+    display:none;
 }
 
 #code {
-    display:none
-}
-
-#code:target {
-    display: block;
+    display:none;
 }
 
 section article {
@@ -196,15 +184,31 @@ article .fa {
 
 /* MAIN RIGHT */
 
-#detail {
+#detail_perso, 
+#detail_ps, 
+#detail_ai, 
+#detail_id, 
+#detail_pr, 
+#detail_bl, 
+#detail_html, 
+#detail_css, 
+#detail_php, 
+#detail_sql, 
+#detail_py   {
     display: none;
     background: #95C2D7;
     padding: 30px;
-    margin-right: 50px;
+    margin: 50px 0px;
     box-shadow: 0px 0px 10px  #FFC107;
 }
 
-#detail:target {
+#detail_perso:target, #detail_ps:target,
+#detail_ai:target, #detail_id:target, #detail_pr:target, 
+#detail_bl:target,
+#detail_html:target,
+#detail_css:target, #detail_php:target, #detail_sql:target, 
+#detail_py:target
+{
     display: inline-block;
     background: #95C2D7;
     padding: 30px;
@@ -217,15 +221,38 @@ article .fa {
 #portfolio {
     display: none;
     width: 100%;
-    height: 700px;
+    height: 700%;
     background: #3D4F58;
+    z-index: 5;
 }
 
 #portfolio:target {
     display: block;
     width: 100%;
     height: 700px;
+    z-index: 5;
     background: #3D4F58;
+        -webkit-animation: anim 1s 10ms norSmal ease-out forwards;
+        -moz-animation: anim 5s 500ms  normal ease-out forwards;
+        animation: anim 1s 10ms normal ease-out forwards;
+}
+
+@-webkit-keyframes anim{
+  0% {  margin-left: 100%;}
+  100% {margin-left: 0%;
+        width: 100%;}
+}
+
+@-moz-keyframes anim{
+   0% {  margin-left: 100%;}
+  100% {margin-left: 0%;
+        width: 100%;}
+}
+
+@keyframes anim{
+   0% {  margin-left: 100%;}
+  100% {margin-left: 0%;
+        width: 100%;}
 }
 
 .line1, .line2, .line3 {
