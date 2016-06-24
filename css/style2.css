@@ -149,10 +149,11 @@ hr {
 section article {
     display: block;
     background: #95C2D7;
-    width: 50%;
+    width: 60%;
     padding: 5%;
     margin: auto;
     box-shadow: 0px 0px 20px  #3E7F9E;
+    margin-top: -20px;
 }
 
 article .fa {
@@ -161,8 +162,13 @@ article .fa {
 
 .contact h1{
     font-family: 'Playstation';
-    font-size: 15pt;
+    font-size: 16pt;
 }
+
+.reseau {
+    margin-top: -10px;
+}
+
 
 /* MAIN RIGHT */
 
@@ -218,23 +224,30 @@ article .fa {
     display: block;
     background: #95C2D7;
     width: 50%;
-    height: 150px;
     padding: 30px;
     margin-left: 20%;
     box-shadow: 0px 0px 10px  #FFC107;
+    font-size: 14pt;
     z-index: 3;
+}
+
+#details h1 {
+    margin-top: -10px;
+    font-family: 'Playstation';
+    font-size: 16pt;
 }
 
 #details ul li {
     list-style-type: disc;
-    font-size: 14pt;
+    font-size: 13pt;
     margin: 10px 0 20px 20px;
     padding-left: 10px;
 } 
 
 #details ol {
     height: 180px;
-    margin-top: -10px;
+    margin-top: 10px;
+    font-size: 12pt;
 }
 
 #details .study {
@@ -285,7 +298,8 @@ article .fa {
 }
 
 .carres {
-    margin: 150px 60px 0;
+    width: 450px;
+    margin: 150px auto 0 auto;
 }
 
 .line1, .line2, .line3 {
@@ -293,8 +307,19 @@ article .fa {
     width: 140px;
     height: 140px;
     background-color: #95C2D7;
-    margin-top: 10px;
-    margin-left: 10px;
+}
+
+.line1, .line2{
+    margin-bottom: 10px;
+}
+
+.col1, .col2 {
+    margin-right: 10px;
+}
+
+#portfolio img {
+    width: 140px;
+    height: 140px;
 }
 
 .line1:hover, .line2:hover, .line3:hover {
@@ -308,12 +333,63 @@ article .fa {
 
 /* RESPONSIVE MOBILE */
 
-@media (max-width:768px) {
-    html {
-        background: red;
-    }
+@media (max-width:800px) {
     
     .avatar {
-        
-    }    
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 50px;
+    }   
+    
+    .menu1 ul {
+        margin-top: 150px;
+    }
+    
+    section {
+        margin-top: 30px;
+    }
+    
+    section .elmt {
+        margin-left: 100px;
+    }
+    
+    .wrapperleft hr {
+        margin-top: 39px;
+    }
+    
+    .contact h1 {
+        font-size: 13pt;
+    }
+    
+    .contact, .contact .fa{
+        font-size: 10pt;
+    }
+    
+    .contact {
+        width: 60%;
+        margin: auto;
+    }
+    
+    #details {
+        width: 60%;
+        margin-left: 12%;
+        font-size: 11pt;
+    }
+    
+    #details ol{
+        font-size: 11pt;
+    }
+    
+    .carres {
+        width: 330px;
+    }
+    
+    .line1, .line2, .line3, #portfolio img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .hrport {
+        margin-top: 52px;
+    }
 }
