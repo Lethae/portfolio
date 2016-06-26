@@ -29,7 +29,7 @@ document.querySelector("#portfolio").style.display="none";
 }
 
 document.querySelector("#pushperso").addEventListener('click',function() {
-document.querySelector("#details").innerHTML="<h1>A propos</h1><ol><li>Petite humaine armée d'un crayon et d'une souris qui aime créer des univers</li> <br/> <i class='fa fa-graduation-cap' aria-hidden='true'></i><li class='study'>A étudié à l'IUT de Haguenau pour obtenir son DUT MMI après un bac S</li> <i class='fa fa-globe' aria-hidden='true'></i><li class='study'>Parle, écrit et comprend l'Anglais et l'Allemand.</li> <i class='fa fa-car' aria-hidden='true'></i><li class='study'>Possède le permis B et une voiture ainsi qu'une tablette graphique</li></ol>";
+document.querySelector("#details").innerHTML="<h1>A propos</h1><ol><li>Petite humaine armée d'un crayon et d'une souris qui aime créer des univers.</li> <br/> <i class='fa fa-graduation-cap' aria-hidden='true'></i><li class='study'>A étudié à l'IUT de Haguenau pour obtenir son DUT MMI après un bac S</li> <i class='fa fa-car' aria-hidden='true'></i><li class='study'>Possède le permis B et une voiture ainsi qu'une tablette graphique</li><i class='fa fa-globe' aria-hidden='true'></i><li class='study'>Anglais et Allemand lu, parlé et écrit</li></ol>";
 });
 
 
@@ -38,7 +38,7 @@ document.querySelector("#details").innerHTML="<h1>A propos</h1><ol><li>Petite hu
 /* ELEMENTS GRAPH */
 
 document.querySelector("#elmt_ps").addEventListener('click',function() {
-document.querySelector("#details").innerHTML="<h1>Photoshop</h1><ul><li> Créer des maquettes de site web</li><li> Détourer des images et les retoucher</li><li> Créer des illustrations à la tablette graphique</li></ul>";
+document.querySelector("#details").innerHTML="<h1>Photoshop</h1><ul><li> Créer des maquettes de site web</li><li> Détourer des images et les retoucher</li><li> Créer des illustrations à l'aide d'une tablette graphique</li></ul>";
 });
 
 document.querySelector("#elmt_ai").addEventListener('click',function() {
@@ -46,11 +46,11 @@ document.querySelector("#details").innerHTML="<h1>Illustrator</h1><ul><li> Crée
 });
 
 document.querySelector("#elmt_id").addEventListener('click',function() {
-document.querySelector("#details").innerHTML="<h1>InDesign</h1><ul><li> Mettre en page des documents</li><li> Créer un magazine</li></ul>";
+document.querySelector("#details").innerHTML="<h1>InDesign</h1><ul><li> Mettre en page des documents</li><li> Créer un catalogue</li></ul>";
 });
 
 document.querySelector("#elmt_pr").addEventListener('click',function() {
-document.querySelector("#details").innerHTML="<h1>Premiere</h1><ul><li> Monter des vidéos courtes à partir de rushs </li><li> Gérer le mixage audio s'assurer de la qualité de l'image</li></ul>";
+document.querySelector("#details").innerHTML="<h1>Premiere</h1><ul><li> Monter des vidéos courtes à partir de rushs </li><li> Gérer le mixage audio et s'assurer de la qualité de l'image</li></ul>";
 });
 
 document.querySelector("#elmt_bl").addEventListener('click',function() {
@@ -68,7 +68,7 @@ document.querySelector("#details").innerHTML="<h1>CSS</h1><ul><li> Transformer u
 });
 
 document.querySelector("#elmt_php").addEventListener('click',function() {
-document.querySelector("#details").innerHTML="<h1>PHP</h1><ul><li> Créer une application web de gestion avec CRUD sécurisée</li><li> Faire un mini-chat ou forum</li><li> Lier le SQL au PHP</li></ul>";
+document.querySelector("#details").innerHTML="<h1>PHP</h1><ul><li> Créer une application web de gestion sécurisée avec CRUD</li><li> Créer un mini-chat ou un forum</li><li> Lier le SQL au PHP</li></ul>";
 });
 
 document.querySelector("#elmt_sql").addEventListener('click',function() {
@@ -76,25 +76,25 @@ document.querySelector("#details").innerHTML="<h1>MySQL</h1><ul><li> Créer une 
 });
 
 document.querySelector("#elmt_py").addEventListener('click',function() {
-document.querySelector("#details").innerHTML="<h1>Python</h1><ul><li> Faire des petits scripts pour Blender</li></ul>";
+document.querySelector("#details").innerHTML="<h1>Python</h1><ul><li> Ecrire des scripts pour Blender</li></ul>";
 });
 
 /* ELEMENTS PORTFOLIO */
 
 document.querySelector("#carre_1-1").addEventListener('mouseover',function() {
-document.querySelector("#details").innerHTML="Affiche réalisée dans le cadre d'un projet d'Art en 1ère année de DUT à l'occasion des portes ouvertes de l'IUT";
+document.querySelector("#details").innerHTML="Affiche réalisée dans le cadre d'un projet d'Art en 1ère année de DUT destinée aux portes ouvertes de l'IUT.";
 });
 
 document.querySelector("#carre_1-2").addEventListener('mouseover',function() {
-document.querySelector("#details").innerHTML="Logo réalisé dans le cadre d'un projet d'Infographie en 1ère année de DUT pour l'ouverture du futur Fabrication Laboratory de Colmar que nous avons décidé de nommer PIC³LAB pour l'exercice";
+document.querySelector("#details").innerHTML="Logo réalisé dans le cadre d'un projet d'Infographie en 1ère année de DUT pour l'ouverture du futur Fabrication Laboratory de Colmar que nous avons décidé de nommer PIC³LAB pour l'exercice.";
 });
 
 document.querySelector("#carre_1-3").addEventListener('mouseover',function() {
-document.querySelector("#details").innerHTML="Maquette réalisée dans le cadre d'un projet d'Infographie en 1ère année de DUT pour l'ouverture du futur Fabrication Laboratory de Colmar que nous avons décidé de nommer PIC³LAB pour l'exercice";
+document.querySelector("#details").innerHTML="Maquette réalisée dans le cadre d'un projet d'Infographie en 1ère année de DUT pour l'ouverture du futur Fabrication Laboratory de Colmar que nous avons décidé de nommer PIC³LAB pour l'exercice.";
 });
 
 document.querySelector("#carre_2-1").addEventListener('mouseover',function() {
-document.querySelector("#details").innerHTML="<p>Site web créé dans le cadre d'un projet tutoré de communication de 1ère année de DUT portant sur le tourisme.</p> <p>Notre duo a décidé de retravailler le site du <a href='https://www.wbstudiotour.co.uk/fr/'>Warner Bros London Studio Tour</a></p>";
+document.querySelector("#details").innerHTML="<p>Site web créé dans le cadre d'un projet tutoré de communication de 1ère année de DUT portant sur le tourisme.</p> <p>Notre duo a décidé de retravailler le site du <a href='https://www.wbstudiotour.co.uk/fr/'>Warner Bros London Studio Tour.</a></p>";
 });
 
 document.querySelector("#carre_2-2").addEventListener('mouseover',function() {
@@ -106,13 +106,13 @@ document.querySelector("#details").innerHTML="Logo réalisé pour le projet de c
 });
 
 document.querySelector("#carre_3-1").addEventListener('mouseover',function() {
-document.querySelector("#details").innerHTML="Magazine de vente créé pour l'entreprise d'aquariophilie <a href='http://www.aquarioom.com/fr/'>Aquarioom</a> au cours d'un CDD d'un mois";
+document.querySelector("#details").innerHTML="Catalogue de vente créé pour l'entreprise d'aquariophilie <a href='http://www.aquarioom.com/fr/'>Aquarioom</a> au cours d'un CDD d'un mois.";
 });
 
 document.querySelector("#carre_3-2").addEventListener('mouseover',function() {
-document.querySelector("#details").innerHTML="Avatar en flatdesign d'un personnage de jeu vidéo : <a href='http://static.comicvine.com/uploads/original/11123/111236489/4664752-kh3-3.png'>Sora, Kingdom Hearts 2</a>";
+document.querySelector("#details").innerHTML="Avatar en flatdesign d'un personnage de jeu vidéo : <a href='http://static.comicvine.com/uploads/original/11123/111236489/4664752-kh3-3.png'>Sora, Kingdom Hearts 2.</a>";
 });
 
 document.querySelector("#carre_3-3").addEventListener('mouseover',function() {
-document.querySelector("#details").innerHTML="Icône en flatdesign d'une <a href='http://i2.cdscdn.com/pdt2/0/9/7/1/700x700/0711719174097/rw/manette-de-jeu-dualshock-3-noire-ps3.jpg'>manette de PS3</a>";
+document.querySelector("#details").innerHTML="Icône en flatdesign d'une <a href='http://i2.cdscdn.com/pdt2/0/9/7/1/700x700/0711719174097/rw/manette-de-jeu-dualshock-3-noire-ps3.jpg'>manette de PS3.</a>";
 });

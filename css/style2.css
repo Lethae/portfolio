@@ -42,7 +42,9 @@ html {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     color: #111111;
-    background: #607D8B;
+    background: url(../images/fond.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
     height: 100%;
 }
 
@@ -114,7 +116,7 @@ section .elmt {
     padding: 10px 30px;
     margin: 20px 20%;
     width: 60%;
-    box-shadow: 0px 0px 10px  #3E7F9E;
+    box-shadow: 0px 0px 10px  #3E7F9E inset;
 }
 
 section .elmt:hover {
@@ -152,7 +154,7 @@ section article {
     width: 60%;
     padding: 5%;
     margin: auto;
-    box-shadow: 0px 0px 20px  #3E7F9E;
+    box-shadow: 0px 0px 20px  #3E7F9E inset;
     margin-top: -20px;
 }
 
@@ -194,18 +196,14 @@ article .fa {
     padding-top: 7px;
 }
 
-#graphicon {
-    background: #3D4F58;
-    border-radius:50%;
-    width: 40px;
-    height: 40px;
+#graphicon i {
     line-height: 40px;
     font-weight: 900;
     float: right;
     margin-top: 5px;
     margin-right: 10%;
     text-align: center;
-    color: #95C2D7;
+    color: #3D4F58;
 }
 
 .avatar {
@@ -261,6 +259,10 @@ article .fa {
 
 #details .fa-globe {
     margin-left: -16px;
+}
+
+#details a {
+    text-decoration: underline;
 }
 
 /*PORTFOLIO*/
