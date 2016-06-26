@@ -58,8 +58,8 @@ a{
     top: 0;
     left: 0;
     width: calc(100% / 2);
+    height: 100vh;
     display: inline-block;
-    height: 100%;
 }
 
 .wrapperright {
@@ -67,6 +67,7 @@ a{
     top: 0;
     right: 0;
     width: calc(100% / 2);
+    height: 100vh;
     display: inline-block;
 }
 
